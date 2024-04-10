@@ -20,21 +20,21 @@ const TopNavbar = () => {
                     <Button
                         variant="outline"
                         size="icon"
-                        className="rounded-full bg-white hover:bg-gradient-to-r from-primary to-secondary text-primary hover:text-white "
+                        className="rounded-full bg-white hover:bg-tertiary text-tertiary hover:text-white dark:bg-primary dark:text-white dark:hover:bg-tertiary dark:border dark:border-white"
                     >
                         <FacebookIcon />
                     </Button>
                     <Button
                         variant="outline"
                         size="icon"
-                        className="rounded-full hover:bg-gradient-to-r from-primary to-secondary text-primary hover:text-white"
+                        className="rounded-full bg-white hover:bg-tertiary text-tertiary hover:text-white dark:bg-primary dark:text-white dark:hover:bg-tertiary dark:border dark:border-white"
                     >
                         <InstagramIcon />
                     </Button>
                     <Button
                         variant="outline"
                         size="icon"
-                        className="rounded-full hover:bg-gradient-to-r from-primary to-secondary text-primary hover:text-white"
+                        className="rounded-full bg-white hover:bg-tertiary text-tertiary hover:text-white dark:bg-primary dark:text-white dark:hover:bg-tertiary dark:border dark:border-white"
                     >
                         <TwitterIcon />
                     </Button>

@@ -18,10 +18,12 @@ module.exports = {
         },
         extend: {
             colors: {
-                pink: "#F56787",
-                yellow: "#F79C63",
-                primary: "#010280",
-                secondary: "#1973D1",
+                // primary: "#010280",
+                primary: "#00014B",
+                // secondary: "#1973D1",
+                secondary: "#000",
+                // tertiary: "#00D58F",
+                tertiary: "#00bc7d",
             },
             keyframes: {
                 "accordion-down": {

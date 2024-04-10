@@ -5,6 +5,9 @@ import blackLogo from "../../assets/images/logo-black.png";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
+import ThemeSwitcher from "@/components/common/ThemeSwitcher";
+import { routes } from "@/utils/routes";
+import Link from "next/link";
 
 const Navbar = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -37,49 +40,23 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className=" lg:flex flex-wrap gap-4 hidden items-center">
-                        <a
-                            className={`text-${
-                                isSticky ? "black" : "white"
-                            } text-base font-bold p-1`}
-                            href="Home"
-                        >
-                            Home
-                        </a>
-                        <a
-                            className={`text-${
-                                isSticky ? "black" : "white"
-                            } text-base font-bold p-1`}
-                            href="Pages"
-                        >
-                            Pages
-                        </a>
-                        <a
-                            className={`text-${
-                                isSticky ? "black" : "white"
-                            } text-base font-bold p-1`}
-                            href="Services"
-                        >
-                            Services
-                        </a>
-                        <a
-                            className={`text-${
-                                isSticky ? "black" : "white"
-                            } text-base font-bold p-1`}
-                            href="Blog"
-                        >
-                            Blog
-                        </a>
-                        <a
-                            className={`text-${
-                                isSticky ? "black" : "white"
-                            } text-base font-bold p-1`}
-                            href="Contact Us"
-                        >
-                            Contact Us
-                        </a>
-                        <Button className={isSticky ? "bg-primary text-white" : null}>
-                            Get A Quote
-                        </Button>
+                        {routes.map((route) => {
+                            return (
+                                <Link
+                                    key={route.name}
+                                    className={`text-${
+                                        isSticky ? "black" : "white"
+                                    } text-base font-bold p-1`}
+                                    href={route.route}
+                                >
+                                    {route.name}
+                                </Link>
+                            );
+                        })}
+                        <Link href="/#contact">
+                            <Button>Contact us</Button>
+                        </Link>
+                        <ThemeSwitcher />
                     </div>
                 </div>
             </nav>

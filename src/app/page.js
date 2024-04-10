@@ -1,12 +1,14 @@
+import Hero from "@/components/Homepage/Hero";
 import Navbar from "@/components/Homepage/Navbar";
 import TopNavbar from "@/components/Homepage/TopNavbar";
 
 export default function Home() {
     return (
-        <div className="h-[2400px]">
-            <div className="bg-gradient-to-r from-primary to-secondary relative">
+        <div className="h-[2400px] dark:bg-primary">
+            <div className="bg-primary relative">
                 <TopNavbar />
                 <Navbar />
+                <Hero />
                 <div className=" bottom-0 left-0 w-full h-[100px] lg:h-[350px] overflow-hidden">
                     <svg
                         viewBox="0 0 1440 300"
