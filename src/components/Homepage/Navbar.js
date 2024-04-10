@@ -1,7 +1,7 @@
 "use client";
 import { MenuIcon } from "lucide-react";
-import whiteLogo from "../../assets/images/logo-white.png";
-import blackLogo from "../../assets/images/logo-black.png";
+import whiteLogo from "../../assets/images/logo-light.webp";
+import darkLogo from "../../assets/images/logo-dark.webp";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
@@ -33,7 +33,11 @@ const Navbar = () => {
                 <div className="flex flex-col sm:flex-row justify-between items-center transition-transform">
                     <div className="flex justify-between w-full lg:w-auto">
                         <div>
-                            <Image src={isSticky ? blackLogo : whiteLogo} alt="site logo" />
+                            <Image
+                                src={isSticky ? whiteLogo : darkLogo}
+                                alt="site logo"
+                                className="w-20 h-20"
+                            />
                         </div>
                         <div>
                             <MenuIcon className="block mt-5 ml-32 lg:hidden h-6" />
