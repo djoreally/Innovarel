@@ -25,7 +25,7 @@ const Navbar = () => {
 
     return (
         <section
-            className={`relative ${
+            className={`relative z-50 ${
                 isSticky ? "bg-white" : "bg-transparent"
             } transition-colors duration-300  sticky top-0 py-3`}
         >

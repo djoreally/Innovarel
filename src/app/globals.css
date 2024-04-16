@@ -31,9 +31,9 @@ html {
     border-radius: 71% 29% 29% 71% / 71% 68% 32% 29%;
 }
 
-.card-title {
+/* .card-title {
     color: #00a79d;
-}
+} */
 .card:hover .card-title {
     color: white;
 }

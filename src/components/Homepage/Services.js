@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const Services = () => {
     return (
         <section className="mt-12" style={{ backgroundImage: "url()" }}>
-            <div className="max-w-7xl mx-auto">
+            <div className="w-11/12 lg:w-8/12 mx-auto ">
                 <div className="mx-4">
                     <div className="grid grid-cols-1  lg:grid-cols-3">
                         <div>
@@ -18,7 +18,7 @@ const Services = () => {
                                 Digital Services
                             </h3>
                         </div>
-                        <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-[#00A79D] to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
+                        <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
                             <CardHeader>
                                 <div className="rounded-full bg-white p-3 w-20 h-20 flex justify-center items-center">
                                     <Image
@@ -38,7 +38,7 @@ const Services = () => {
                                 iaculis venenatis
                             </CardContent>
                         </Card>
-                        <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-[#00A79D] to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
+                        <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
                             <CardHeader>
                                 <div className="rounded-full bg-white p-3 w-20 h-20 flex justify-center items-center">
                                     <Image
@@ -63,7 +63,7 @@ const Services = () => {
                 <div className="mx-4">
                     <div className="grid grid-cols-1  lg:grid-cols-3 ">
                         <div className="md:mt-[-110px]">
-                            <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-[#00A79D] to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
+                            <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
                                 <CardHeader>
                                     <div className="rounded-full bg-white p-3 w-20 h-20 flex justify-center items-center">
                                         <Image
@@ -84,7 +84,7 @@ const Services = () => {
                                 </CardContent>
                             </Card>
                         </div>
-                        <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-[#00A79D] to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
+                        <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
                             <CardHeader>
                                 <div className="rounded-full bg-white p-3 w-20 h-20 flex justify-center items-center">
                                     <Image
@@ -104,7 +104,7 @@ const Services = () => {
                                 iaculis venenatis
                             </CardContent>
                         </Card>
-                        <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-[#00A79D] to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
+                        <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
                             <CardHeader>
                                 <div className="rounded-full bg-white p-3 w-20 h-20 flex justify-center items-center">
                                     <Image
