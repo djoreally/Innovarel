@@ -8,7 +8,7 @@ import confettiImg from "../../assets/images/confetti.png";
 const Summary = () => {
     return (
         <section className="bg-primary dark:bg-white py-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-11/12 lg:w-8/12 mx-auto ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-11/12 lg:w-8/12 mx-auto justify-between">
                 <div className="text-center">
                     <p className="text-5xl p-2 text-tertiary">0000+</p>
                     <p className="text-white dark:text-primary text-2xl pb-2">Satisfied Clients</p>

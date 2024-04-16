@@ -26,7 +26,7 @@ const Navbar = () => {
     return (
         <section
             className={`relative z-50 ${
-                isSticky ? "bg-white" : "bg-transparent"
+                isSticky ? "bg-white shadow-lg" : "bg-primary"
             } transition-colors duration-300  sticky top-0 py-3`}
         >
             <nav className="w-11/12 lg:w-8/12 mx-auto">
@@ -40,7 +40,11 @@ const Navbar = () => {
                             />
                         </div>
                         <div>
-                            <MenuIcon className="block mt-5 ml-32 lg:hidden h-6" />
+                            <MenuIcon
+                                className={`block mt-5 ml-32 lg:hidden h-6 ${
+                                    isSticky ? "text-primary" : "text-white"
+                                }`}
+                            />
                         </div>
                     </div>
                     <div className=" lg:flex flex-wrap gap-4 hidden items-center">

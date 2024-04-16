@@ -5,7 +5,7 @@ import heroImage from "../../assets/images/hero.jpg";
 const Hero = () => {
     return (
         <section className="bg-primary">
-            <div className="w-11/12 lg:w-8/12 mx-auto mt-14 flex flex-col-reverse lg:flex-row justify-between items-center gap-5 lg:gap-10">
+            <div className="w-11/12 lg:w-8/12 mx-auto pt-14 flex flex-col-reverse lg:flex-row justify-between items-center gap-5 lg:gap-10">
                 <div className="text-white text-justify w-full lg:w-1/2">
                     <div className="flex justify-center items-center text-lg p-1 shadow-sm rounded-2xl bg-tertiary w-48 mx-auto lg:mx-0">
                         <p className="">WE ARE THE BEST</p>

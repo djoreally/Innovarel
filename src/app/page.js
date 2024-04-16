@@ -1,6 +1,7 @@
 import About from "@/components/Homepage/About";
 import Hero from "@/components/Homepage/Hero";
 import Navbar from "@/components/Homepage/Navbar";
+import ProvidingService from "@/components/Homepage/ProvidingService";
 import Services from "@/components/Homepage/Services";
 import Summary from "@/components/Homepage/Summary";
 import TopNavbar from "@/components/Homepage/TopNavbar";
@@ -14,6 +15,7 @@ export default function Home() {
             <Services />
             <About />
             <Summary />
+            <ProvidingService />
         </div>
     );
 }

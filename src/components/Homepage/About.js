@@ -6,7 +6,7 @@ import checkImg from "../../assets/images/check.png";
 const About = () => {
     return (
         <section
-            className="bg-no-repeat bg-cover mt-20 "
+            className="bg-no-repeat bg-cover my-20 "
             style={{ backgroundImage: "url(../../images/check.png)" }}
         >
             <div className="w-11/12 lg:w-8/12 mx-auto relative">
