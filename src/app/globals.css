@@ -37,3 +37,13 @@ html {
 .card:hover .card-title {
     color: white;
 }
+.card:hover .card-icon {
+    color: #00bc7d;
+}
+.card:hover .card-icon-div {
+    background: white;
+}
+.card:hover .card-button {
+    background: white;
+    color: #00bc7d;
+}

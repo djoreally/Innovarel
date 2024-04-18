@@ -1,6 +1,8 @@
 import About from "@/components/Homepage/About";
 import Hero from "@/components/Homepage/Hero";
 import Navbar from "@/components/Homepage/Navbar";
+import Prices from "@/components/Homepage/Prices";
+import Projects from "@/components/Homepage/Projects";
 import ProvidingService from "@/components/Homepage/ProvidingService";
 import Services from "@/components/Homepage/Services";
 import Summary from "@/components/Homepage/Summary";
@@ -16,6 +18,8 @@ export default function Home() {
             <About />
             <Summary />
             <ProvidingService />
+            <Projects />
+            <Prices />
         </div>
     );
 }
