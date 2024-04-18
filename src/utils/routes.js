@@ -19,6 +19,10 @@ export const routes = [
         name: "Projects",
         route: "/projects",
     },
+    {
+        name: "Team",
+        route: "/team",
+    },
     // {
     //     name: "Contact us",
     //     route: "/#contact",
@@ -26,5 +30,9 @@ export const routes = [
     {
         name: "Blogs",
         route: "/Blogs",
+    },
+    {
+        name: "Faq",
+        route: "/faq",
     },
 ];
