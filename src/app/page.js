@@ -6,6 +6,7 @@ import Projects from "@/components/Homepage/Projects";
 import ProvidingService from "@/components/Homepage/ProvidingService";
 import Services from "@/components/Homepage/Services";
 import Summary from "@/components/Homepage/Summary";
+import Testimonials from "@/components/Homepage/Testimonials";
 import TopNavbar from "@/components/Homepage/TopNavbar";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
             <ProvidingService />
             <Projects />
             <Prices />
+            <Testimonials />
         </div>
     );
 }
