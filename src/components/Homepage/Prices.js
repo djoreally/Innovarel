@@ -19,9 +19,9 @@ const Prices = () => {
                         <TabsTrigger value="monthly">Monthly</TabsTrigger>
                         <TabsTrigger value="yearly">Yearly</TabsTrigger>
                     </TabsList>
-                    <TabsContent value="monthly">
+                    <TabsContent value="monthly" className="mt-10">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                            <Card className="card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white mt-8 dark:bg-white">
+                            <Card className="card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white  dark:bg-white">
                                 <CardContent className="card-body items-center text-center">
                                     <h2 className="card-title font-bold text-tertiary p-5 text-4xl">
                                         Basic Plan
@@ -47,7 +47,7 @@ const Prices = () => {
                                     </CardFooter>
                                 </CardContent>
                             </Card>
-                            <Card className="card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white mt-8 dark:bg-white">
+                            <Card className="card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white  dark:bg-white">
                                 <CardContent className="card-body items-center text-center">
                                     <h2 className="card-title font-bold text-tertiary p-5 text-4xl">
                                         Standard Plan
@@ -73,7 +73,7 @@ const Prices = () => {
                                     </CardFooter>
                                 </CardContent>
                             </Card>
-                            <Card className="card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white mt-8 dark:bg-white">
+                            <Card className="card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white  dark:bg-white">
                                 <CardContent className="card-body items-center text-center">
                                     <h2 className="card-title font-bold text-tertiary p-5 text-4xl">
                                         Premium Plan
@@ -101,9 +101,9 @@ const Prices = () => {
                             </Card>
                         </div>
                     </TabsContent>
-                    <TabsContent value="yearly">
+                    <TabsContent value="yearly" className="mt-10">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                            <Card className="card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white mt-8 dark:bg-white">
+                            <Card className="card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white  dark:bg-white">
                                 <CardContent className="card-body items-center text-center">
                                     <h2 className="card-title font-bold text-tertiary p-5 text-4xl">
                                         Basic Plan
@@ -129,7 +129,7 @@ const Prices = () => {
                                     </CardFooter>
                                 </CardContent>
                             </Card>
-                            <Card className="card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white mt-8 dark:bg-white">
+                            <Card className="card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white  dark:bg-white">
                                 <CardContent className="card-body items-center text-center">
                                     <h2 className="card-title font-bold text-tertiary p-5 text-4xl">
                                         Standard Plan
@@ -155,7 +155,7 @@ const Prices = () => {
                                     </CardFooter>
                                 </CardContent>
                             </Card>
-                            <Card className="card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white mt-8 dark:bg-white">
+                            <Card className="card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white  dark:bg-white">
                                 <CardContent className="card-body items-center text-center">
                                     <h2 className="card-title font-bold text-tertiary p-5 text-4xl">
                                         Premium Plan

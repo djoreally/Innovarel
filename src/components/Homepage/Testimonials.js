@@ -16,7 +16,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 const Testimonials = () => {
     return (
         <section className="bg-cover bg-center mt-20" style={{ backgroundImage: "" }}>
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="w-11/12 lg:w-8/12 mx-auto ">
                 <div className="flex justify-center items-center text-lg p-1 shadow-sm rounded-2xl bg-tertiary w-48 mx-auto my-5">
                     <h1 className="text-white">Testimonials</h1>
                 </div>
@@ -27,9 +27,9 @@ const Testimonials = () => {
                     <CarouselContent>
                         {Array.from({ length: 5 }).map((_, index) => (
                             <CarouselItem key={index}>
-                                <Card className="w-full card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white mt-8 dark:bg-white p-5">
+                                <Card className="w-full card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white mt-8 dark:bg-white p-5 text-black">
                                     <CardContent class="mt-2">
-                                        <p class="mt-2 text-gray-600 dark:text-gray-300">
+                                        <p class="mt-2 text-gray-600 dark:text-black">
                                             Lorem ipsum dolor sit, amet consectetur adipisicing
                                             elit. Tempora expedita dicta totam aspernatur
                                             doloremque. Excepturi iste iusto eos enim reprehenderit
@@ -48,13 +48,13 @@ const Testimonials = () => {
                                         </div>
                                         <div>
                                             <h6
-                                                class="font-bold text-gray-700 cursor-pointer dark:text-gray-200"
+                                                class="font-bold text-gray-700 cursor-pointer dark:text-black"
                                                 tabindex="0"
                                                 role="link"
                                             >
                                                 Khatab wedaa
                                             </h6>
-                                            <p>CEO,xyz company</p>
+                                            <p className="text-black">CEO,xyz company</p>
                                         </div>
                                     </CardFooter>
                                 </Card>
