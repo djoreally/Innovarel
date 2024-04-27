@@ -94,7 +94,7 @@ const Footer = () => {
                                         <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
                                             Useful Links
                                         </span>
-                                        <div className=" grid grid-col-1 lg:grid-cols-2 gap-x-5 justify-end mt-10">
+                                        <div className=" grid grid-col-1 lg:grid-cols-2 gap-x-5 mt-10">
                                             {routes.map((route) => {
                                                 return (
                                                     <h6 key={route.name}>
