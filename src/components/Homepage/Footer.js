@@ -1,9 +1,14 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Card } from "@/components/ui/card";
+import { SearchIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { routes } from "@/utils/routes";
 
 const Footer = () => {
     return (
-        <div>
+        <footer>
             <div className=" top-0 left-0 w-full h-[100px] lg:h-[350px] overflow-hidden mt-10 z-10">
                 <svg viewBox="0 0 1440 300" preserveAspectRatio="none" className="w-full h-full">
                     <defs>
@@ -24,136 +29,156 @@ const Footer = () => {
             </div>
             <section className="bg-black">
                 <div className="max-w-6xl mx-auto bg-pattern bg-cover bg-center z-50">
-                    <Card className="card bg-primary text-primary-content p-10  shadow-2xl bg-gradient-to-r from-[#F56787] to-[#F79C63] flex justify-center items-center">
-                        <div className="flex flex-col lg:flex-row justify-between items-center ">
-                            <h2 className="card-title text-4xl lg:text-5xl text-center lg:text-left mb-6 lg:mb-0">
+                    <Card className="card bg-primary text-primary-content p-10  shadow-2xl bg-gradient-to-r from-tertiary to-[#9CFAAC] flex justify-center items-center">
+                        <div className="w-full flex flex-col lg:flex-row justify-between items-center">
+                            <h2 className="card-title text-4xl lg:text-5xl text-center lg:text-left mb-6 lg:mb-0 text-white">
                                 Subscribe To Our Newsletter
                                 <br />
                                 For Latest Update
                             </h2>
-                            <div className="flex rounded-3xl bg-white shadow-2xl h-12">
+                            <div className="w-full lg:w-1/3 flex justify-center items-center rounded-3xl bg-white shadow-2xl h-[52px]">
                                 <input
                                     type="search"
                                     name="search"
                                     id="search"
                                     placeholder="Your Email Address"
-                                    className="w-full border-none bg-transparent px-4 py-1 outline-none focus:outline-none"
+                                    className="w-full border-none bg-transparent px-4 py-2 outline-none focus:outline-none"
                                 />
-                                <button className="m-2 rounded px-4 py-2 text-white">
-                                    <img
-                                        className="h-11 w-12 ml-5 rounded-full mt-[-14px] bg-[#F56787]"
-                                        src="./communication.png"
-                                        alt=""
-                                    />
-                                </button>
+                                <Button className="mr-2 rounded-full px-2 py-2 text-white bottom-3">
+                                    <SearchIcon />
+                                </Button>
                             </div>
                         </div>
                     </Card>
                 </div>
-
-                <div>
-                    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between mt-10">
-                        <div className="mb-16 lg:mb-0">
-                            <img
-                                src="./logo-2.png"
-                                alt=""
-                                className="mx-auto lg:mx-0 mb-4 lg:mb-0  ml-4"
-                            />
-                            <div className="flex flex-col lg:flex-row lg:items-center">
-                                <div className="flex mb-4 lg:mb-0">
-                                    <img
-                                        className="h-8 bg-[#F56787] rounded-full ml-6 md:mt-4 md:ml-[8px]"
-                                        src="./telephone.png"
-                                        alt=""
-                                    />
-                                    <p className="mt-[-12px] ml-3 md:mt-1">+91 123-456-7890</p>
-                                </div>
-                                <div className="ml-[68px] mt-[-30px] lg:ml-9 md:mt-12">
-                                    <p className="md:ml-[-167px]">+91 123-456-7890</p>
+                <div className="relative bg-blueGray-200 pt-8 pb-6 text-white">
+                    <div className="container mx-auto px-4">
+                        <div className="flex flex-wrap items-center text-left lg:text-left">
+                            <div className="w-full lg:w-6/12 px-4">
+                                <h4 className="text-3xl fonat-semibold text-blueGray-700">
+                                    Let's keep in touch!
+                                </h4>
+                                <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
+                                    Find us on any of these platforms, we respond 1-2 business days.
+                                </h5>
+                                <div className="mt-6 lg:mb-0 mb-6">
+                                    <button
+                                        className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                                        type="button"
+                                    >
+                                        <i className="fab fa-twitter"></i>
+                                    </button>
+                                    <button
+                                        className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                                        type="button"
+                                    >
+                                        <i className="fab fa-facebook-square"></i>
+                                    </button>
+                                    <button
+                                        className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                                        type="button"
+                                    >
+                                        <i className="fab fa-dribbble"></i>
+                                    </button>
+                                    <button
+                                        className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                                        type="button"
+                                    >
+                                        <i className="fab fa-github"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div className="flex flex-col lg:flex-row lg:items-center mt-4 lg:mt-8">
-                                <div className="flex mb-4 lg:mb-0">
-                                    <img
-                                        className="h-8 bg-[#F56787] rounded-full ml-6 md:ml-[8px]"
-                                        src="./email1.png"
-                                        alt=""
-                                    />
-                                    <p className="mt-[-12px] ml-3">info@example.com</p>
-                                </div>
-                                <div className="ml-[67px] mt-[-28px] lg:ml-9 md:mt-8">
-                                    <p className="md:ml-[-172px]">info@example.com</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col lg:flex-row lg:items-center mt-4 lg:mt-8">
-                                <div className="flex mb-4 lg:mb-0">
-                                    <img
-                                        className="h-8 bg-[#F56787] rounded-full ml-6 md:ml-2"
-                                        src="./location.png"
-                                        alt=""
-                                    />
-                                    <p className="mt-[-12px] ml-3">Marmora Road Chi Minh City,</p>
-                                </div>
-                                <div className="ml-[68px] lg:ml-9 mt-[-28px] md:mt-6 ">
-                                    <p className="md:ml-[-242px]">Vietnam</p>
+                            <div className="w-full lg:w-6/12 px-4">
+                                <div className="flex flex-wrap items-top mb-6">
+                                    <div className="w-full lg:w-4/12">
+                                        <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+                                            Useful Links
+                                        </span>
+                                        <div className=" grid grid-col-1 lg:grid-cols-2 gap-x-5 justify-end mt-10">
+                                            {routes.map((route) => {
+                                                return (
+                                                    <h6 key={route.name}>
+                                                        <Link
+                                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm "
+                                                            href={route.route}
+                                                        >
+                                                            {route.name}
+                                                        </Link>
+                                                    </h6>
+                                                );
+                                            })}
+                                        </div>
+                                    </div>
+                                    {/* <div className="w-full lg:w-4/12 px-4">
+                                        <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+                                            Other Resources
+                                        </span>
+                                        <ul className="list-unstyled">
+                                            <li>
+                                                <Link
+                                                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                                    href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
+                                                >
+                                                    MIT License
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                                    href="https://creative-tim.com/terms?ref=njs-profile"
+                                                >
+                                                    Terms &amp; Conditions
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                                    href="https://creative-tim.com/privacy?ref=njs-profile"
+                                                >
+                                                    Privacy Policy
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                                    href="https://creative-tim.com/contact-us?ref=njs-profile"
+                                                >
+                                                    Contact Us
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
-                        <div className="mt-16 md:ml-[-100px] lg:mt-0">
-                            <p className="text-4xl text-black font-bold ml-[-195px] mt-[-90px] text-center lg:text-left md:mt-2 md:ml-1">
-                                Our links
-                            </p>
-                            <ul className="text-base text-black mt-8 ml-5">
-                                <li className="mb-4 hover:ml-5">Home</li>
-                                <li className="mb-4 hover:ml-5">About Us</li>
-                                <li className="mb-4 hover:ml-5">Services</li>
-                                <li className="mb-4 hover:ml-5">Team</li>
-                                <li className="mb-4 hover:ml-5">Blog</li>
-                            </ul>
-                        </div>
-                        <div className="mt-16 lg:mt-0">
-                            <p className="text-4xl text-black font-bold ml-[-130px] mt-[-10px] text-center md:mt-3 lg:text-left">
-                                Our Services
-                            </p>
-                            <ul className="text-base text-black mt-8 ml-5 md:ml-[-100px]">
-                                <li className="mb-4 hover:ml-5">Home</li>
-                                <li className="mb-4 hover:ml-5">About Us</li>
-                                <li className="mb-4 hover:ml-5">Services</li>
-                                <li className="mb-4 hover:ml-5">Team</li>
-                                <li className="mb-4 hover:ml-5">Blog</li>
-                            </ul>
-                        </div>
-                        <div className="mt-16 lg:mt-0">
-                            <p className="text-4xl text-black font-bold ml-[-155px] text-center md:mt-4  lg:text-left">
-                                Other links
-                            </p>
-                            <ul className="text-base text-black mt-8 ml-5 md:ml-[-120px]">
-                                <li className="mb-4 hover:ml-5">Home</li>
-                                <li className="mb-4 hover:ml-5">About Us</li>
-                                <li className="mb-4 hover:ml-5">Services</li>
-                                <li className="mb-4 hover:ml-5">Team</li>
-                                <li className="mb-4 hover:ml-5">Blog</li>
-                            </ul>
+                        <hr className="my-6 border-blueGray-300" />
+                        <div className="flex flex-wrap items-center md:justify-between justify-center">
+                            <div className="w-full md:w-4/12 px-4 mx-auto text-center">
+                                <div className="text-sm text-blueGray-500 font-semibold py-1">
+                                    ©2024
+                                    <a
+                                        href="https://innovarel.vercel.app/"
+                                        className="text-tertiary "
+                                        target="_blank"
+                                    >
+                                        {" "}
+                                        Innovarel
+                                    </a>{" "}
+                                    Developed by{" "}
+                                    <a
+                                        href="https://lantabur-softech.com"
+                                        className="text-[#00c0ff] "
+                                    >
+                                        Lantabur Softech
+                                    </a>
+                                    .
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="bg-black">
-                <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center p-1">
-                    <div className="mb-4 lg:mb-0">
-                        <p className="text-base text-white">
-                            Copyright © 2021 DexignZone. All rights reserved.
-                        </p>
-                    </div>
-
-                    <div className="flex items-center">
-                        <img className="h-8 w-auto lg:h-8 lg:p-1" src="./facebook.png" alt="" />
-                        <img className="h-7 w-auto lg:h-7 lg:p-1" src="./social.png" alt="" />
-                        <img className="h-8 w-auto lg:h-8 lg:p-1" src="./twitter.png" alt="" />
-                    </div>
-                </div>
-            </section>
-        </div>
+        </footer>
     );
 };
 

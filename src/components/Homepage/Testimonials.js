@@ -28,8 +28,8 @@ const Testimonials = () => {
                         {Array.from({ length: 5 }).map((_, index) => (
                             <CarouselItem key={index}>
                                 <Card className="w-full card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white mt-8 dark:bg-white p-5 text-black">
-                                    <CardContent class="mt-2">
-                                        <p class="mt-2 text-gray-600 dark:text-black">
+                                    <CardContent className="mt-2">
+                                        <p className="mt-2 text-gray-600 dark:text-black">
                                             Lorem ipsum dolor sit, amet consectetur adipisicing
                                             elit. Tempora expedita dicta totam aspernatur
                                             doloremque. Excepturi iste iusto eos enim reprehenderit
@@ -38,7 +38,7 @@ const Testimonials = () => {
                                         </p>
                                     </CardContent>
 
-                                    <CardFooter class="flex items-center justify-start mt-4">
+                                    <CardFooter className="flex items-center justify-start mt-4">
                                         <div>
                                             <img
                                                 className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
@@ -48,7 +48,7 @@ const Testimonials = () => {
                                         </div>
                                         <div>
                                             <h6
-                                                class="font-bold text-gray-700 cursor-pointer dark:text-black"
+                                                className="font-bold text-gray-700 cursor-pointer dark:text-black"
                                                 tabindex="0"
                                                 role="link"
                                             >
