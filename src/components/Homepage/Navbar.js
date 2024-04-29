@@ -39,9 +39,10 @@ const Navbar = () => {
                                 className="w-20 h-20"
                             />
                         </div>
-                        <div>
+                        <div className="flex justify-end items-center gap-5">
+                            <ThemeSwitcher />
                             <MenuIcon
-                                className={`block mt-5 ml-32 lg:hidden h-6 ${
+                                className={`block lg:hidden h-6 ${
                                     isSticky ? "text-primary" : "text-white"
                                 }`}
                             />
