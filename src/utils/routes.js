@@ -29,10 +29,10 @@ export const routes = [
     // },
     {
         name: "Blogs",
-        route: "/Blogs",
+        route: "/blogs",
     },
-    {
-        name: "Faq",
-        route: "/faq",
-    },
+    // {
+    //     name: "Faq",
+    //     route: "/faq",
+    // },
 ];

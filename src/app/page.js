@@ -14,9 +14,7 @@ import TopNavbar from "@/components/Homepage/TopNavbar";
 
 export default function Home() {
     return (
-        <div className=" dark:bg-primary">
-            <TopNavbar />
-            <Navbar />
+        <div>
             <Hero />
             <Services />
             <About />
