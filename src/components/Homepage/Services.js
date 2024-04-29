@@ -17,7 +17,8 @@ const Services = () => {
                             Digital Services
                         </h3>
                     </div>
-                    <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
+
+                    <Card className="w-full lg:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
                         <CardHeader>
                             <div className="rounded-full bg-white p-3 w-20 h-20 flex justify-center items-center">
                                 <Image
@@ -37,7 +38,7 @@ const Services = () => {
                             venenatis
                         </CardContent>
                     </Card>
-                    <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
+                    <Card className="w-full lg:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
                         <CardHeader>
                             <div className="rounded-full bg-white p-3 w-20 h-20 flex justify-center items-center">
                                 <Image
@@ -60,8 +61,8 @@ const Services = () => {
                 </div>
 
                 <div className="grid grid-cols-1  lg:grid-cols-3 ">
-                    <div className="md:mt-[-110px]">
-                        <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
+                    <div className="xl:mt-[-110px]">
+                        <Card className="w-full lg:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
                             <CardHeader>
                                 <div className="rounded-full bg-white p-3 w-20 h-20 flex justify-center items-center">
                                     <Image
@@ -82,7 +83,7 @@ const Services = () => {
                             </CardContent>
                         </Card>
                     </div>
-                    <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
+                    <Card className="w-full lg:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
                         <CardHeader>
                             <div className="rounded-full bg-white p-3 w-20 h-20 flex justify-center items-center">
                                 <Image
@@ -102,7 +103,7 @@ const Services = () => {
                             venenatis
                         </CardContent>
                     </Card>
-                    <Card className="w-full md:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
+                    <Card className="w-full lg:w-96 glass hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] dark:bg-white mb-5 shadow-md card">
                         <CardHeader>
                             <div className="rounded-full bg-white p-3 w-20 h-20 flex justify-center items-center">
                                 <Image
