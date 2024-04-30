@@ -1,5 +1,4 @@
 "use client";
-import { MenuIcon } from "lucide-react";
 import whiteLogo from "../../assets/images/logo-light.webp";
 import darkLogo from "../../assets/images/logo-dark.webp";
 import Image from "next/image";
@@ -8,6 +7,7 @@ import { useEffect, useState } from "react";
 import ThemeSwitcher from "@/components/common/ThemeSwitcher";
 import { routes } from "@/utils/routes";
 import Link from "next/link";
+import SideNavbar from "./SideNavbar";
 
 const Navbar = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -41,11 +41,7 @@ const Navbar = () => {
                         </div>
                         <div className="flex justify-end items-center gap-5">
                             <ThemeSwitcher />
-                            <MenuIcon
-                                className={`block lg:hidden h-6 ${
-                                    isSticky ? "text-primary" : "text-white"
-                                }`}
-                            />
+                            <SideNavbar />
                         </div>
                     </div>
                     <div className=" lg:flex flex-wrap gap-4 hidden items-center">

@@ -4,6 +4,7 @@ import happinessImg from "../../assets/images/happiness.png";
 import monitorImg from "../../assets/images/monitor.png";
 import startupImg from "../../assets/images/startup.png";
 import confettiImg from "../../assets/images/confetti.png";
+import { BarChart3Icon, PartyPopperIcon, RocketIcon, SmilePlusIcon } from "lucide-react";
 
 const Summary = () => {
     return (
@@ -12,22 +13,22 @@ const Summary = () => {
                 <div className="text-center">
                     <p className="text-5xl p-2 text-tertiary">0000+</p>
                     <p className="text-white dark:text-primary text-2xl pb-2">Satisfied Clients</p>
-                    <Image className="h-8 w-8 mx-auto" src={happinessImg} alt="" />
+                    <SmilePlusIcon className="w-16 h-16 mx-auto text-tertiary" />
                 </div>
                 <div className="text-center">
                     <p className="text-5xl p-2 text-tertiary">0000+</p>
                     <p className="text-white dark:text-primary text-2xl pb-2">Project Completed</p>
-                    <Image className="h-8 w-8 mx-auto" src={monitorImg} alt="" />
+                    <BarChart3Icon className="w-16 h-16 mx-auto text-tertiary" />
                 </div>
                 <div className="text-center">
                     <p className="text-5xl p-2 text-tertiary">0000+</p>
                     <p className="text-white dark:text-primary text-2xl pb-2">Project Launched</p>
-                    <Image className="h-8 w-8 mx-auto" src={startupImg} alt="" />
+                    <RocketIcon className="w-16 h-16 mx-auto text-tertiary" />
                 </div>
                 <div className="text-center">
                     <p className="text-5xl p-2 text-tertiary">0000+</p>
                     <p className="text-white dark:text-primary text-2xl pb-2">Years Completed</p>
-                    <Image className="h-8 w-8 mx-auto" src={confettiImg} alt="" />
+                    <PartyPopperIcon className="w-16 h-16 mx-auto text-tertiary" />
                 </div>
             </div>
         </section>
