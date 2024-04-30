@@ -1,10 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Card } from "@/components/ui/card";
-import { SearchIcon } from "lucide-react";
+import { GithubIcon, SearchIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { routes } from "@/utils/routes";
+import { Input } from "@/components/ui/input";
+import { TwitterIcon } from "lucide-react";
+import { FacebookIcon } from "lucide-react";
+import { InstagramIcon } from "lucide-react";
 
 const Footer = () => {
     return (
@@ -36,15 +40,16 @@ const Footer = () => {
                                 <br />
                                 For Latest Update
                             </h2>
-                            <div className="w-full lg:w-1/3 flex justify-center items-center rounded-3xl bg-white shadow-2xl h-[52px]">
-                                <input
-                                    type="search"
+                            <div className="w-full lg:w-2/5 flex justify-center items-center rounded-3xl ">
+                                <Input
+                                    type="email"
                                     name="search"
                                     id="search"
                                     placeholder="Your Email Address"
-                                    className="w-full border-none bg-transparent px-4 py-2 outline-none focus:outline-none"
+                                    className="w-full border-none bg-transparent px-4 py-2 outline-none focus:outline-none rounded-3xl bg-white shadow-2xl h-[52px] text-black
+                                    "
                                 />
-                                <Button className="mr-2 rounded-full px-2 py-2 text-white bottom-3">
+                                <Button className="relative mr-2 rounded-full px-2 py-2 text-white right-12">
                                     <SearchIcon />
                                 </Button>
                             </div>
@@ -62,30 +67,30 @@ const Footer = () => {
                                     Find us on any of these platforms, we respond 1-2 business days.
                                 </h5>
                                 <div className="mt-6 lg:mb-0 mb-6">
-                                    <button
-                                        className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                        type="button"
+                                    <Button
+                                        size="icon"
+                                        className="bg-white dark:bg-white border-none text-sky-500 dark:text-sky-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                                     >
-                                        <i className="fab fa-twitter"></i>
-                                    </button>
-                                    <button
-                                        className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                        type="button"
+                                        <TwitterIcon />
+                                    </Button>
+                                    <Button
+                                        size="icon"
+                                        className="bg-white dark:bg-white border-none text-blue-600 dark:text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                                     >
-                                        <i className="fab fa-facebook-square"></i>
-                                    </button>
-                                    <button
-                                        className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                        type="button"
+                                        <FacebookIcon />
+                                    </Button>
+                                    <Button
+                                        size="icon"
+                                        className="bg-white dark:bg-white border-none text-pink-400 dark:text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                                     >
-                                        <i className="fab fa-dribbble"></i>
-                                    </button>
-                                    <button
-                                        className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                        type="button"
+                                        <InstagramIcon />
+                                    </Button>
+                                    <Button
+                                        size="icon"
+                                        className="bg-white dark:bg-white border-none text-black dark:text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                                     >
-                                        <i className="fab fa-github"></i>
-                                    </button>
+                                        <GithubIcon />
+                                    </Button>
                                 </div>
                             </div>
                             <div className="w-full lg:w-6/12 px-4">
