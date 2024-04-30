@@ -39,7 +39,7 @@ const Navbar = () => {
                                 className="w-20 h-20"
                             />
                         </div>
-                        <div className="flex justify-end items-center gap-5">
+                        <div className="flex lg:hidden justify-end items-center gap-5">
                             <ThemeSwitcher />
                             <SideNavbar />
                         </div>
