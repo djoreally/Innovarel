@@ -12,6 +12,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import SingleTestimonialSkeleton from "../skeletons/SingleTestimonialSkeleton";
 
 const Testimonials = () => {
     return (
@@ -27,7 +28,7 @@ const Testimonials = () => {
                     <CarouselContent>
                         {Array.from({ length: 5 }).map((_, index) => (
                             <CarouselItem key={index}>
-                                <Card className="w-full card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white mt-8 dark:bg-white p-5 text-black">
+                                {/* <Card className="w-full card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white mt-8 dark:bg-white p-5 text-black">
                                     <CardContent className="mt-2">
                                         <p className="mt-2 text-gray-600 dark:text-black">
                                             Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -57,7 +58,8 @@ const Testimonials = () => {
                                             <p className="text-black">CEO,xyz company</p>
                                         </div>
                                     </CardFooter>
-                                </Card>
+                                </Card> */}
+                                <SingleTestimonialSkeleton />
                             </CarouselItem>
                         ))}
                     </CarouselContent>

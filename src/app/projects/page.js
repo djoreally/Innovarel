@@ -1,6 +1,4 @@
-import Image from "next/image";
-import project1 from "../../assets/images/project-1.jpeg";
-import { Button } from "@/components/ui/button";
+import SingleProject from "@/components/projects/SingleProject";
 
 const ProjectsPage = () => {
     return (
@@ -34,18 +32,10 @@ const ProjectsPage = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-5">
-                    <div class="relative w-full mx-auto overlay-parent">
-                        <Image
-                            class=" w-full object-cover rounded-md"
-                            src={project1}
-                            alt="Random image"
-                        />
-                        <div class="absolute inset-0 bg-gray-700 opacity-60 rounded-md overlay-content"></div>
-                        <div class="absolute inset-0 flex items-center justify-center overlay-content">
-                            <Button className="bg-tertiary text-white">See Live Site</Button>
-                        </div>
-                    </div>
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8">
+                    {Array.from({ length: 5 }).map((_, index) => (
+                        <SingleProject key={index} />
+                    ))}
                 </div>
                 {/* <div className="w-full flex justify-center mt-10">
                     <Button>See all projects</Button>
