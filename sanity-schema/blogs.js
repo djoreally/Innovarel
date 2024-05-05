@@ -23,8 +23,7 @@ export const blogs = {
         defineField({
             title: "Blog",
             name: "blog",
-            type: "block",
-            options: { spellCheck: true },
+            type: "array",
             of: [{ type: "block", options: { spellCheck: true } }],
         }),
         // defineField({
