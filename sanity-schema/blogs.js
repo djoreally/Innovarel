@@ -23,8 +23,9 @@ export const blogs = {
         defineField({
             title: "Blog",
             name: "blog",
-            type: "array",
-            of: [{ type: "block", options: { spellCheck: true } }],
+            type: "block",
+            options: { spellCheck: true },
+            // of: [{ type: "block", options: { spellCheck: true } }],
         }),
         defineField({
             title: "Markdown",
