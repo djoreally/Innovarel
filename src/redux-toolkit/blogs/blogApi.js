@@ -16,7 +16,7 @@ const blogsApi = apiSlice.injectEndpoints({
             ]
            
             
-            | order(_createdAt desc){ _id, title, blog_markdown,_createdAt,image{ "url":asset->url}, }`,
+            | order(_createdAt desc){ _id, title, blog_markdown, blog,_createdAt,image{ "url":asset->url}, }`,
         }),
         getSingleBlog: builder.query({
             query: (id) => `?query=*[_type=="Blogs" && _id==${id}

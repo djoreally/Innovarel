@@ -26,11 +26,11 @@ export const blogs = {
             type: "array",
             of: [{ type: "block", options: { spellCheck: true } }],
         }),
-        // defineField({
-        //     title: "Markdown",
-        //     name: "blog_markdown",
-        //     type: "markdown",
-        // }),
+        defineField({
+            title: "Markdown",
+            name: "blog_markdown",
+            type: "markdown",
+        }),
         // defineField({
         //     title: "Date",
         //     name: "date",
