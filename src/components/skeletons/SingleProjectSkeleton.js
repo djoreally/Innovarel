@@ -13,7 +13,7 @@ const SingleProjectSkeleton = () => {
                     <li className="h-8 bg-gray-300 rounded-lg w-12"></li>
                 </ul>
             </div> */}
-            <div className="relative w-full mx-auto">
+            <div className="relative w-full mx-auto animate-pulse">
                 <div className="bg-gray-300 rounded-md h-96"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="h-8 bg-gray-400 rounded w-24"></div>

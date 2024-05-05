@@ -21,7 +21,7 @@ export default function Home() {
             <Summary />
             <ProvidingService />
             <Projects />
-            <Prices />
+            {/* <Prices /> */}
             <Testimonials />
             <Blogs />
             <Sponsors />
