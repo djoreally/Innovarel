@@ -29,4 +29,4 @@ const blogsApi = apiSlice.injectEndpoints({
     }),
 });
 
-export const { useGetProjectsQuery, useGetSingleBlogQuery } = blogsApi;
+export const { useGetBlogsQuery, useGetSingleBlogQuery } = blogsApi;

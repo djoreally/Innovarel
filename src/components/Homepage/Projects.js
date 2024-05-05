@@ -1,11 +1,16 @@
+"use client";
 import React from "react";
-import project1 from "../../assets/images/project-1.jpeg";
-import Image from "next/image";
+
 import { Button } from "../ui/button";
 import Link from "next/link";
 import SingleProject from "../projects/SingleProject";
+import { useGetProjectsQuery } from "@/redux-toolkit/projects/projectApi";
+import SingleProjectSkeleton from "../skeletons/SingleProjectSkeleton";
 
 const Projects = () => {
+    const { data: allProjects, isLoading, error } = useGetProjectsQuery();
+    const result = allProjects?.result?.slice(0, 6) ?? [];
+    // console.log(result);
     return (
         <section className="bg-cover bg-center mt-20" style={{ backgroundImage: "" }}>
             <div className="w-11/12 lg:w-8/12 mx-auto ">
@@ -37,9 +42,11 @@ const Projects = () => {
                         </li>
                     </ul>
                 </div> */}
+                {isLoading && <SingleProjectSkeleton />}
+                {error && <h1>{error.message}</h1>}
                 <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8 mt-10">
-                    {Array.from({ length: 5 }).map((_, index) => (
-                        <SingleProject key={index} />
+                    {result.map((project) => (
+                        <SingleProject key={project._id} project={project} />
                     ))}
                 </div>
                 <div className="w-full flex justify-center mt-10">

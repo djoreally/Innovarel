@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/common/ThemeProvider";
 import TopNavbar from "@/components/Homepage/TopNavbar";
 import Navbar from "@/components/Homepage/Navbar";
+import StoreProvider from "@/redux-toolkit/StoreProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,9 @@ export default function RootLayout({ children }) {
                 <ThemeProvider enableSystem={false} attribute="class">
                     <TopNavbar />
                     <Navbar />
-                    <div className="dark:bg-primary">{children}</div>
+                    <StoreProvider>
+                        <div className="dark:bg-primary">{children}</div>
+                    </StoreProvider>
                 </ThemeProvider>
             </body>
         </html>

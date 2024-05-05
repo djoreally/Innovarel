@@ -21,4 +21,4 @@ const testimonialsApi = apiSlice.injectEndpoints({
     }),
 });
 
-export const { useGetProjectsQuery } = blogsApi;
+export const { useGetTestimonialsQuery } = testimonialsApi;
