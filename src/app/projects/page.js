@@ -15,7 +15,7 @@ const ProjectsPage = () => {
                 <h3 className="text-center text-4xl font-bold text-primary dark:text-white">
                     Take A Look At Our Latest Work
                 </h3>
-                <div className="flex justify-center text-black">
+                {/* <div className="flex justify-center text-black">
                     <ul className="list-none flex flex-wrap gap-5 text-base mt-4 md:mt-6 mb-4 md:mb-6 justify-center">
                         <li className="text-base dark:text-white px-3 py-2 rounded-lg hover:bg-tertiary hover:text-white cursor-pointer">
                             All
@@ -36,13 +36,16 @@ const ProjectsPage = () => {
                             SEO
                         </li>
                     </ul>
-                </div>
+                </div> */}
                 {isLoading && <SingleProjectSkeleton />}
                 {error && <h1>{error.message}</h1>}
-                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8">
-                    {allProjects?.result?.map((project) => (
-                        <SingleProject key={project._id} project={project} />
-                    ))}
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8 mt-10">
+                    {!isLoading && allProjects?.result.length === 0 && <h3>No Data Found</h3>}
+                    {!isLoading &&
+                        allProjects?.result.length > 0 &&
+                        allProjects?.result?.map((project) => (
+                            <SingleProject key={project._id} project={project} />
+                        ))}
                 </div>
                 {/* <div className="w-full flex justify-center mt-10">
                     <Button>See all projects</Button>

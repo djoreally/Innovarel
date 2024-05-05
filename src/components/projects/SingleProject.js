@@ -7,11 +7,12 @@ const SingleProject = ({ project }) => {
     return (
         <section class="relative w-full mx-auto overlay-parent h-96">
             <Image
-                className=" w-full object-fill rounded-md h-96"
+                className=" w-full  rounded-md h-96"
                 src={image.url}
                 alt="project image"
-                width={50}
-                height={50}
+                // width={400}
+                // height={400}
+                fill
             />
             <div class="absolute inset-0 bg-gray-700 opacity-60 rounded-md overlay-content"></div>
             <div class="absolute inset-0 flex items-center justify-center overlay-content">
