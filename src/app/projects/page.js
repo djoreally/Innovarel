@@ -1,6 +1,11 @@
+"use client";
 import SingleProject from "@/components/projects/SingleProject";
+import SingleProjectSkeleton from "@/components/skeletons/SingleProjectSkeleton";
+import { useGetProjectsQuery } from "@/redux-toolkit/projects/projectApi";
 
 const ProjectsPage = () => {
+    const { data: allProjects, isLoading, error } = useGetProjectsQuery();
+
     return (
         <section className="bg-cover bg-center py-20" style={{ backgroundImage: "" }}>
             <div className="w-11/12 lg:w-8/12 mx-auto ">
@@ -32,9 +37,11 @@ const ProjectsPage = () => {
                         </li>
                     </ul>
                 </div>
+                {isLoading && <SingleProjectSkeleton />}
+                {error && <h1>{error.message}</h1>}
                 <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8">
-                    {Array.from({ length: 5 }).map((_, index) => (
-                        <SingleProject key={index} />
+                    {allProjects?.result?.map((project) => (
+                        <SingleProject key={project._id} project={project} />
                     ))}
                 </div>
                 {/* <div className="w-full flex justify-center mt-10">
