@@ -45,9 +45,12 @@ const Projects = () => {
                 {isLoading && <SingleProjectSkeleton />}
                 {error && <h1>{error.message}</h1>}
                 <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8 mt-10">
-                    {result.map((project) => (
-                        <SingleProject key={project._id} project={project} />
-                    ))}
+                    {!isLoading && result.length === 0 && <h3>No Data Found</h3>}
+                    {!isLoading &&
+                        result.length > 0 &&
+                        result?.map((project) => (
+                            <SingleProject key={project._id} project={project} />
+                        ))}
                 </div>
                 <div className="w-full flex justify-center mt-10">
                     <Link href={"/projects"}>

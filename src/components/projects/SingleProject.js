@@ -10,9 +10,9 @@ const SingleProject = ({ project }) => {
                 className=" w-full  rounded-md h-96"
                 src={image.url}
                 alt="project image"
-                // width={400}
-                // height={400}
-                fill
+                width={500}
+                height={500}
+                // fill
             />
             <div class="absolute inset-0 bg-gray-700 opacity-60 rounded-md overlay-content"></div>
             <div class="absolute inset-0 flex items-center justify-center overlay-content">

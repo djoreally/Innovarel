@@ -20,17 +20,17 @@ export const blogs = {
             validation: (rule) => rule.required(),
         }),
 
-        // defineField({
-        //     title: "Blog",
-        //     name: "blog",
-        //     type: "array",
-        //     of: [{ type: "block", options: { spellCheck: true } }],
-        // }),
         defineField({
-            title: "Markdown",
-            name: "blog_markdown",
-            type: "markdown",
+            title: "Blog",
+            name: "blog",
+            type: "array",
+            of: [{ type: "block", options: { spellCheck: true } }],
         }),
+        // defineField({
+        //     title: "Markdown",
+        //     name: "blog_markdown",
+        //     type: "markdown",
+        // }),
         // defineField({
         //     title: "Date",
         //     name: "date",
