@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const SingleBlogPageSkeleton = () => {
     return (
-        <Card className="relative flex-shrink-0 w-full md:w-1/2 dark:bg-white rounded-lg animate-pulse h-[40rem]">
+        <Card className="my-10 relative flex-shrink-0 w-full md:w-1/2 dark:bg-white rounded-lg animate-pulse h-[40rem]">
             <CardHeader>
                 <div className="rounded-lg">
                     <div className="bg-gray-300 rounded-lg h-48"></div>

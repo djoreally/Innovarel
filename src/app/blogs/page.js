@@ -1,6 +1,11 @@
+"use client";
 import SingleBlog from "@/components/blogs/SingleBlog";
+import SingleBlogPageSkeleton from "@/components/skeletons/SingleBlogPageSkeleton";
+import { useGetBlogsQuery } from "@/redux-toolkit/blogs/blogApi";
 
 const BlogsPage = () => {
+    const { data: allBlogs, isLoading, error } = useGetBlogsQuery();
+    const result = allBlogs?.result?.slice(0, 4) ?? [];
     return (
         <section className="w-11/12 lg:w-8/12 mx-auto py-20">
             <div className="mx-auto">
@@ -11,10 +16,16 @@ const BlogsPage = () => {
                 <h1 className="text-center text-4xl font-bold text-black dark:text-white mt-8">
                     Latest News & Blog
                 </h1>
-                <div className="flex flex-col md:flex-row gap-5 py-8">
-                    <SingleBlog />
-                    <SingleBlog />
-                </div>
+                {isLoading && <SingleBlogPageSkeleton />}
+                {error && <h1>{error.message}</h1>}
+                {!isLoading && result.length === 0 && <h3>No Data Found</h3>}
+                {!isLoading && result.length > 0 && (
+                    <div className="flex flex-col md:flex-row gap-5 py-8">
+                        {result.map((blog) => (
+                            <SingleBlog key={blog._id} blog={blog} />
+                        ))}
+                    </div>
+                )}
             </div>
         </section>
     );
