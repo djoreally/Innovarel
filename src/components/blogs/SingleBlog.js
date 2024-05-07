@@ -8,11 +8,11 @@ const SingleBlog = ({ blog }) => {
     console.log(blog);
     const { blog: blog_text, image, title, _createdAt, _id } = blog || {};
     return (
-        <Card className="relative flex-shrink-0 w-full md:w-1/2 dark:bg-white rounded-lg">
+        <Card className="relative flex-shrink-0 w-full dark:bg-white rounded-lg ">
             <CardHeader>
                 <div className="rounded-lg">
                     <Image
-                        className="rounded-lg w-full"
+                        className="rounded-lg w-full h-96"
                         src={image.url}
                         alt=""
                         width={500}
