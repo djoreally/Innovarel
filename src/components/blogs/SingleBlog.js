@@ -5,7 +5,7 @@ import blog from "../../assets/images/blog1.jpg";
 import Link from "next/link";
 
 const SingleBlog = ({ blog }) => {
-    console.log(blog);
+    // console.log(blog);
     const { blog: blog_text, image, title, _createdAt, _id } = blog || {};
     return (
         <Card className="relative flex-shrink-0 w-full dark:bg-white rounded-lg ">
@@ -19,7 +19,7 @@ const SingleBlog = ({ blog }) => {
                         height={500}
                     />
                     <p className="absolute transform rotate-90 - bg-tertiary py-2 px-4 rounded-xl text-white font-semibold md:mt-[-310px] ml-[-25px] mt-[-158px]">
-                        {_createdAt.slice(0, 12)}
+                        {_createdAt.slice(0, 10)}
                     </p>
                 </div>
                 <br />

@@ -50,7 +50,7 @@ const BlogDetailsPage = ({ params }) => {
                             {/* <p className="font-semibold text-gray-200 text-sm"> Mike Sullivan </p> */}
                             <p className="font-semibold text-gray-400 text-xs">
                                 {" "}
-                                {_createdAt?.slice(0, 12)}{" "}
+                                {_createdAt?.slice(0, 10)}{" "}
                             </p>
                         </div>
                     </div>
