@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { useGetTeamQuery } from "@/redux-toolkit/team/teamApi";
 import TeamSkeleton from "@/components/skeletons/TeamSkeleton";
 import Image from "next/image";
-import Link from "next/link";
 
 const TeamPage = () => {
     const { data: team, isLoading, error } = useGetTeamQuery();
