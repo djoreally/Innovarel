@@ -11,7 +11,7 @@ const Sponsors = () => {
                 <h3 className="text-center">No Data Found</h3>
             )}
             {!isLoading && sponsorsData.result.length > 0 && (
-                <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 justify-center md:justify-between px-4 w-full mx-auto">
+                <div className="flex flex-row justify-center flex-wrap px-4 w-full mx-auto">
                     {sponsorsData.result.map((sponsor) => {
                         const {
                             _id,
