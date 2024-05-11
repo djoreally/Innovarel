@@ -18,7 +18,7 @@ const SingleBlog = ({ blog }) => {
                         width={500}
                         height={500}
                     />
-                    <p className="absolute transform rotate-90 - bg-tertiary py-2 px-4 rounded-xl text-white font-semibold md:mt-[-310px] ml-[-25px] mt-[-158px]">
+                    <p className="absolute bg-tertiary py-2 px-4 rounded-xl text-white font-semibold  ml-[25px] mt-[-350px]">
                         {_createdAt.slice(0, 10)}
                     </p>
                 </div>
