@@ -1,7 +1,5 @@
 "use client";
-import sponsor1 from "../../assets/images/logo-light1.png";
 import Image from "next/image";
-import Link from "next/link";
 import { useGetSponsorsQuery } from "@/redux-toolkit/sponsors/sponsorsApi";
 
 const Sponsors = () => {
@@ -13,7 +11,7 @@ const Sponsors = () => {
                 <h3 className="text-center">No Data Found</h3>
             )}
             {!isLoading && sponsorsData.result.length > 0 && (
-                <div className="grid grid-cols-2 md:grid-cols-6 justify-center md:justify-between px-4">
+                <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 justify-center md:justify-between px-4 w-full mx-auto">
                     {sponsorsData.result.map((sponsor) => {
                         const {
                             _id,
@@ -26,9 +24,15 @@ const Sponsors = () => {
                                 key={_id}
                                 href={url}
                                 target="_blank"
-                                className="hover:bg-tertiary py-3 text-tertiary mb-2 md:mb-0 md:mr-2 rounded-xl"
+                                className=" hover:bg-tertiary p-3 text-tertiary mb-2 md:mb-0 md:mr-2 rounded-full w-24 h-24 flex justify-center items-center"
                             >
-                                <Image src={image} alt="" className="mx-auto" />
+                                <Image
+                                    src={image.url}
+                                    alt=""
+                                    className="mx-auto w-18 h-18 rounded-full"
+                                    width={500}
+                                    height={500}
+                                />
                             </a>
                         );
                     })}

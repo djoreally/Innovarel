@@ -1,9 +1,3 @@
-import Image from "next/image";
-import React from "react";
-import happinessImg from "../../assets/images/happiness.png";
-import monitorImg from "../../assets/images/monitor.png";
-import startupImg from "../../assets/images/startup.png";
-import confettiImg from "../../assets/images/confetti.png";
 import { BarChart3Icon, PartyPopperIcon, RocketIcon, SmilePlusIcon } from "lucide-react";
 
 const Summary = () => {

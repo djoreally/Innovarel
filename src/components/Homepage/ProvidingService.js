@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import ideaImg from "../../assets/images/idea.png";
-import terminalImg from "../../assets/images/terminal.png";
-import rocketImg from "../../assets/images/rocket.png";
+
 import { Card, CardContent, CardHeader } from "../ui/card";
 
 const ProvidingService = () => {
