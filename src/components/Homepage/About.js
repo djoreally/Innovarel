@@ -19,10 +19,10 @@ const About = () => {
                         />
                     </div>
                     <div className="md:w-1/2 md:ml-24 mt-4 md:mt-0">
-                        <div className="flex justify-center items-center text-lg p-1 shadow-sm rounded-2xl bg-tertiary w-48 mx-auto lg:mx-0 my-10">
+                        <div className="flex justify-center items-center text-lg p-1 shadow-sm rounded-2xl bg-secondary dark:bg-tertiary w-48 mx-auto lg:mx-0 my-10">
                             <h1 className="text-white">About Us</h1>
                         </div>
-                        <h2 className="text-4xl font-bold mb-6 text-tertiary">
+                        <h2 className="text-4xl font-bold mb-6 text-secondary dark:text-tertiary">
                             We Have Creative Team To <br />
                             Build Your Website Better
                         </h2>

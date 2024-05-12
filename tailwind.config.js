@@ -21,7 +21,7 @@ module.exports = {
                 // primary: "#010280",
                 primary: "#00014B",
                 // secondary: "#1973D1",
-                secondary: "#000",
+                secondary: "#2872FA",
                 // tertiary: "#00D58F",
                 tertiary: "#00bc7d",
             },

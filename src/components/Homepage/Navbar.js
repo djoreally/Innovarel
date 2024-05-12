@@ -59,7 +59,9 @@ const Navbar = () => {
                             );
                         })}
                         <Link href="/#contact">
-                            <Button>Contact us</Button>
+                            <Button className={isSticky && "bg-secondary dark:bg-tertiary"}>
+                                Contact us
+                            </Button>
                         </Link>
                         <ThemeSwitcher />
                     </div>

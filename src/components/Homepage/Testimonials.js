@@ -16,7 +16,7 @@ const Testimonials = () => {
     return (
         <section className="bg-cover bg-center mt-20" style={{ backgroundImage: "" }}>
             <div className="w-11/12 lg:w-8/12 mx-auto ">
-                <div className="flex justify-center items-center text-lg p-1 shadow-sm rounded-2xl bg-tertiary w-48 mx-auto my-5">
+                <div className="flex justify-center items-center text-lg p-1 shadow-sm rounded-2xl bg-secondary dark:bg-tertiary w-48 mx-auto my-5">
                     <h1 className="text-white">Testimonials</h1>
                 </div>
                 <h3 className="text-center text-2xl md:text-4xl font-bold text-black dark:text-white">
@@ -32,11 +32,9 @@ const Testimonials = () => {
                             testimonials.result.length > 0 &&
                             testimonials.result.map((testimonial) => (
                                 <CarouselItem key={testimonial._id}>
-                                    <Card className="w-full card shadow-xl rounded-lg hover:bg-gradient-to-r from-tertiary to-[#9CFAAC] hover:text-white mt-8 dark:bg-white p-5 text-black">
+                                    <Card className="w-full card shadow-xl rounded-lg hover:bg-gradient-to-r from-secondary to-[#9cbafa] dark:from-tertiary dark:to-[#9CFAAC] hover:text-white mt-8 dark:bg-white p-5 text-black">
                                         <CardContent className="mt-2">
-                                            <p className="mt-2 text-gray-600 dark:text-black">
-                                                {testimonial.text}
-                                            </p>
+                                            <p className="mt-2 text-black">{testimonial.text}</p>
                                         </CardContent>
 
                                         <CardFooter className="flex items-center justify-start mt-4">

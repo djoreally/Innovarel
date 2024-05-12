@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const SingleBlogPageSkeleton = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-3 gap-5 py-8">
             {Array.from({ length: 4 }).map((_, index) => (
                 <Card
                     key={index}

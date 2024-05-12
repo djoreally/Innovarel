@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
             <section className="bg-black">
                 <div className="max-w-6xl mx-auto bg-pattern bg-cover bg-center z-50">
-                    <Card className="card bg-primary text-primary-content p-10  shadow-2xl bg-gradient-to-r from-tertiary to-[#9CFAAC] flex justify-center items-center">
+                    <Card className="card bg-primary text-primary-content p-10  shadow-2xl bg-gradient-to-r from-secondary to-[#9cbafa] dark:from-tertiary dark:to-[#9CFAAC] flex justify-center items-center">
                         <div className="w-full flex flex-col lg:flex-row justify-between items-center">
                             <h2 className="card-title text-4xl lg:text-5xl text-center lg:text-left mb-6 lg:mb-0 text-white">
                                 Subscribe To Our Newsletter
@@ -49,7 +49,7 @@ const Footer = () => {
                                     className="w-full border-none bg-transparent px-4 py-2 outline-none focus:outline-none rounded-3xl bg-white shadow-2xl h-[52px] text-black
                                     "
                                 />
-                                <Button className="relative mr-2 rounded-full px-2 py-2 text-white right-12">
+                                <Button className="relative mr-2 rounded-full px-2 py-2 text-white hover:text-secondary dark:hover:text-tertiary right-12 bg-secondary dark:bg-tertiary border-secondary dark:border-tertiary">
                                     <SearchIcon />
                                 </Button>
                             </div>

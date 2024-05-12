@@ -11,7 +11,7 @@ const Blogs = () => {
         <section className="bg-cover bg-center">
             <div className="w-11/12 lg:w-8/12 mx-auto ">
                 <div className="mx-auto">
-                    <h2 className="text-center mx-auto px-4 py-2 bg-[#FEEFF3] text-tertiary shadow-2xl rounded-xl mt-32 md:w-36 md:items-center mb-10 w-32">
+                    <h2 className="text-center mx-auto px-4 py-2 bg-secondary dark:bg-tertiary text-white shadow-2xl rounded-full mt-32 md:w-36 md:items-center mb-10 w-32">
                         OUR BLOG
                     </h2>
 
@@ -22,7 +22,7 @@ const Blogs = () => {
                     {error && <h1>{error.message}</h1>}
                     {!isLoading && result.length === 0 && <h3>No Data Found</h3>}
                     {!isLoading && result.length > 0 && (
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 py-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-3 gap-5 py-8">
                             {result.map((blog) => (
                                 <SingleBlog key={blog._id} blog={blog} />
                             ))}

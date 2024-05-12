@@ -14,7 +14,7 @@ const Projects = () => {
     return (
         <section className="bg-cover bg-center mt-20" style={{ backgroundImage: "" }}>
             <div className="w-11/12 lg:w-8/12 mx-auto ">
-                <div className="flex justify-center items-center text-lg p-1 shadow-sm rounded-2xl bg-tertiary w-48 mx-auto my-5">
+                <div className="flex justify-center items-center text-lg p-1 shadow-sm rounded-2xl bg-secondary dark:bg-tertiary w-48 mx-auto my-5">
                     <h1 className="text-white">Projects</h1>
                 </div>
                 <h3 className="text-center text-4xl font-bold text-primary dark:text-white">
@@ -54,7 +54,7 @@ const Projects = () => {
                 </div>
                 <div className="w-full flex justify-center mt-10">
                     <Link href={"/projects"}>
-                        <Button>See all projects</Button>
+                        <Button className="bg-secondary dark:bg-tertiary">See all projects</Button>
                     </Link>
                 </div>
             </div>

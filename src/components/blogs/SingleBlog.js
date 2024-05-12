@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
-import blog from "../../assets/images/blog1.jpg";
 import Link from "next/link";
 
 const SingleBlog = ({ blog }) => {
@@ -18,7 +17,7 @@ const SingleBlog = ({ blog }) => {
                         width={500}
                         height={500}
                     />
-                    <p className="absolute bg-tertiary py-2 px-4 rounded-xl text-white font-semibold  ml-[25px] mt-[-350px]">
+                    <p className="absolute bg-secondary dark:bg-tertiary py-2 px-4 rounded-xl text-white font-semibold  ml-[25px] mt-[-350px]">
                         {_createdAt.slice(0, 10)}
                     </p>
                 </div>
@@ -34,7 +33,9 @@ const SingleBlog = ({ blog }) => {
                     />
                 </div>
                 <Link href={`/blogs/${_id}`}>
-                    <button className="text-tertiary text-base mt-4">Read More</button>
+                    <button className="text-secondary dark:text-tertiary text-base mt-4">
+                        Read More
+                    </button>
                 </Link>
             </CardContent>
         </Card>
