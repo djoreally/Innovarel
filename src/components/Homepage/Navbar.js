@@ -59,7 +59,11 @@ const Navbar = () => {
                             );
                         })}
                         <Link href="/#contact">
-                            <Button className={isSticky && "bg-secondary dark:bg-tertiary"}>
+                            <Button
+                                className={
+                                    "bg-secondary dark:bg-tertiary border-secondary dark:border-tertiary hover:text-secondary dark:hover:text-tertiary"
+                                }
+                            >
                                 Contact us
                             </Button>
                         </Link>
