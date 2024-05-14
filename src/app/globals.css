@@ -58,3 +58,10 @@ html {
     visibility: visible;
     opacity: 0.8;
 }
+
+.bg-animation {
+    transition: background-position 5s ease-out;
+}
+.bg-animation:hover {
+    background-position: 0 100%;
+}

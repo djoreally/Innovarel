@@ -39,7 +39,7 @@ const SideNavbar = () => {
                     className={`block lg:hidden h-6 ${isSticky ? "text-primary" : "text-white"}`}
                 />
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent className="dark:bg-primary">
                 <div className="space-y-4 py-4 flex flex-col gap-5 w-full  overflow-y-scroll text-white">
                     <div className="px-3 py-2 flex-1">
                         <div className="space-y-1">
@@ -47,10 +47,10 @@ const SideNavbar = () => {
                                 <Link
                                     key={route.route}
                                     href={route.route}
-                                    className={`text-base group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white  hover:bg-primary rounded-lg transition
+                                    className={`text-base group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white  hover:bg-secondary dark:hover:bg-tertiary rounded-lg transition
                                 ${
                                     pathname === route.route
-                                        ? "text-tertiary bg-primary"
+                                        ? "text-white bg-secondary  dark:bg-tertiary"
                                         : "text-primary dark:text-white"
                                 }`}
                                 >
