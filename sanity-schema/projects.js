@@ -59,11 +59,11 @@ export const projects = {
                 ], // <-- predefined values
             },
         }),
-        // defineField({
-        //     title: "Features",
-        //     name: "features",
-        //     type: "array",
-        //     of: [{ type: "string" }],
-        // }),
+        defineField({
+            title: "Features",
+            name: "features",
+            type: "array",
+            of: [{ type: "string" }],
+        }),
     ],
 };
