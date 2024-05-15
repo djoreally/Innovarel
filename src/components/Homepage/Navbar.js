@@ -58,7 +58,7 @@ const Navbar = () => {
                                 </Link>
                             );
                         })}
-                        <Link href="/#contact">
+                        <a href="mailto:contactus@innovarel.co" target="_blank">
                             <Button
                                 className={
                                     "bg-secondary dark:bg-tertiary border-secondary dark:border-tertiary hover:text-secondary dark:hover:text-tertiary"
@@ -66,7 +66,7 @@ const Navbar = () => {
                             >
                                 Contact us
                             </Button>
-                        </Link>
+                        </a>
                         <ThemeSwitcher />
                     </div>
                 </div>

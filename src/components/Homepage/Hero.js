@@ -10,15 +10,16 @@ const Hero = () => {
                     <div className="flex justify-center items-center text-lg p-1 shadow-sm rounded-2xl bg-secondary dark:bg-tertiary w-48 mx-auto lg:mx-0">
                         <p className="">WE ARE THE BEST</p>
                     </div>
-                    <h3 className="text-3xl text-center lg:text-left mt-5 mb-4">
-                        We Provide Website
+                    <h3 className="text-4xl font-bold text-center lg:text-left mt-5 mb-4">
+                        Empower your business
                     </h3>
-                    <h3 className="text-3xl text-center lg:text-left mb-5">Solution For You</h3>
-                    <p className="text-base text-left">
-                        Mauris in enim sollicitudin quam sollicitudin fermentum ut vitae massa.Donec
-                        venenatis accumsan nisi, sit amet maximus velit euismod sit amet. Vivamus et
-                        sem sed ipsum pretium lobortis non vitae sem.
-                    </p>
+                    <h3 className="text-3xl text-center lg:text-left mb-5">
+                        with cutting-edge{" "}
+                        <span className="text-secondary dark:text-tertiary">web</span> and{" "}
+                        <span className="text-secondary dark:text-tertiary">software</span>{" "}
+                        solutions
+                    </h3>
+                    {/* <p className="text-base text-left"></p> */}
                     {/* <button className="text-base sm:text-lg rounded-3xl shadow-lg bg-white text-red-400 h-12 pr-6 pl-6">
                     Learn More
                 </button> */}

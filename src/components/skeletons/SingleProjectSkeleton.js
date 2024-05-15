@@ -6,7 +6,7 @@ const SingleProjectSkeleton = () => {
             {Array.from({ length: 6 }).map((_, index) => (
                 <div
                     className=" w-full animate-pulse shadow-lg bg-[#3A2B71] rounded-lg p-5 flex flex-col justify-between gap-3"
-                    key={i}
+                    key={index}
                 >
                     <div className="space-y-2 w-full">
                         <div className="h-6 bg-gray-400 rounded w-1/2 mx-auto"></div>

@@ -67,7 +67,7 @@ const SingleProject = ({ project }) => {
                                 "bg-secondary dark:bg-tertiary border-secondary dark:border-tertiary hover:text-secondary dark:hover:text-tertiary"
                             }
                         >
-                            Contact us
+                            Website Link
                         </Button>
                     </a>
                 </div>
