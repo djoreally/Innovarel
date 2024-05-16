@@ -6,6 +6,9 @@ const Sponsors = () => {
     const { data: sponsorsData, isLoading, error } = useGetSponsorsQuery();
     return (
         <section className="bg-cover bg-center w-11/12 lg:w-8/12 mx-auto mt-10">
+            <div className="flex justify-center items-center text-lg p-1 shadow-sm rounded-2xl bg-secondary dark:bg-tertiary w-48 mx-auto lg:mx-0 my-10">
+                <h1 className="text-white">About Us</h1>
+            </div>
             {error && <h1>{error.message}</h1>}
             {!isLoading && sponsorsData.result.length === 0 && (
                 <h3 className="text-center">No Data Found</h3>
