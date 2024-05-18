@@ -22,7 +22,7 @@ const Blogs = () => {
                     {error && <h1>{error.message}</h1>}
                     {!isLoading && result.length === 0 && <h3>No Data Found</h3>}
                     {!isLoading && result.length > 0 && (
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-3 gap-5 py-8">
+                        <div className="grid grid-cols-1  lg:grid-cols-2 gap-5 py-8">
                             {result.map((blog) => (
                                 <SingleBlog key={blog._id} blog={blog} />
                             ))}

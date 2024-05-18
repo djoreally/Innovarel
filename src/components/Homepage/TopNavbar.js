@@ -14,10 +14,10 @@ const TopNavbar = () => {
                                 contactus@innovarel.co
                             </p>
                         </div>
-                        <div className="flex flex-row gap-2">
+                        {/* <div className="flex flex-row gap-2">
                             <PhoneCallIcon className="text-white" />
                             <p className="text-white text-sm sm:text-base">+91 987-654-321</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="flex mt-4 sm:mt-0 gap-3 justify-center">
                         <Button
