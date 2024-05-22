@@ -10,9 +10,7 @@ const TopNavbar = () => {
                     <div className="flex items-center gap-5 justify-center">
                         <div className="flex flex-row gap-2">
                             <MailIcon className="text-white" />
-                            <p className="text-white text-sm sm:text-base">
-                                contactus@innovarel.co
-                            </p>
+                            <p className="text-white text-sm sm:text-base">innovare@innovarel.co</p>
                         </div>
                         {/* <div className="flex flex-row gap-2">
                             <PhoneCallIcon className="text-white" />
